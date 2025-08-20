@@ -162,7 +162,7 @@ function App() {
           <div className="bg-white rounded-2xl shadow-lg p-4">
             <button
            onClick={() => {
-    const audio = new Audio(""); 
+    const audio = new Audio("/safe-in-a-cab.mp3"); 
     audio.play();
   }}
               className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-6 px-6 rounded-xl transition-all duration-200">
@@ -175,7 +175,12 @@ function App() {
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-4">
-            <button className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold py-6 px-6 rounded-xl transition-all duration-200">
+            <button
+                onClick={() => {
+    const audio = new Audio("/empty lane.mp3"); 
+    audio.play();
+  }}
+              className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold py-6 px-6 rounded-xl transition-all duration-200">
               <div className="flex items-center justify-center mb-2">
                 <MapPin className="w-6 h-6 mr-2" />
                 <span className="text-lg">Be Safe in a Dark Lane</span>
@@ -185,7 +190,12 @@ function App() {
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-4">
-            <button className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-6 px-6 rounded-xl transition-all duration-200">
+            <button
+                onClick={() => {
+    const audio = new Audio("/escape-a-public-place.mp3"); 
+    audio.play();
+  }}
+              className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-6 px-6 rounded-xl transition-all duration-200">
               <div className="flex items-center justify-center mb-2">
                 <Building2 className="w-6 h-6 mr-2" />
                 <span className="text-lg">Escape a Public Place</span>
