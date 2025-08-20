@@ -161,11 +161,10 @@ function App() {
         <div className="max-w-md mx-auto space-y-4">
           <div className="bg-white rounded-2xl shadow-lg p-4">
             <button
-           
-              <audio controls>
-  <source src="https://drive.google.com/uc?export=download&id=1PWJFVh_ed3OXU5sBJUVYLkxzkbzi6Elx" type="audio/mpeg" />  {/* ✅ self-closed */}
-  Your browser does not support the audio element.
-</audio>
+           onClick={() => {
+    const audio = new Audio(""); 
+    audio.play();
+  }}
               className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-6 px-6 rounded-xl transition-all duration-200">
               <div className="flex items-center justify-center mb-2">
                 <Users className="w-6 h-6 mr-2" />
