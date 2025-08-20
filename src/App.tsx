@@ -50,6 +50,7 @@ function App() {
         (position) => {
           const { latitude, longitude } = position.coords;
           const query = `hospitals+${latitude},${longitude}`;
+          const query = `police+stations+${latitude},${longitude}`;
           const mapsUrl = `https://maps.google.com/maps?q=${query}&radius=1000`;
           window.open(mapsUrl, '_blank');
         },
