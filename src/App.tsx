@@ -148,28 +148,50 @@ function App() {
 
 
 function App() {
-  const [currentScreen, setCurrentScreen] = useState("main");
+  const audioRef1 = useRef<HTMLAudioElement>(null);
+  const audioRef2 = useRef<HTMLAudioElement>(null);
+  const audioRef3 = useRef<HTMLAudioElement>(null);
+
+  const playAudio = (ref: React.RefObject<HTMLAudioElement>) => {
+    if (ref.current) {
+      ref.current.play().catch((err) => {
+        console.error("Playback failed:", err);
+      });
+    }
+  };
 
   return (
-    <div>
-      {currentScreen === "main" && (
-        <div>
-          {/* Your main screen code here */}
-          <button
-            onClick={() => setCurrentScreen("fakeCall")}
-            className="px-4 py-2 bg-pink-500 text-white rounded-lg"
-          >
-            Go to Fake Call
-          </button>
-        </div>
-      )}
+    <div className="flex flex-col items-center justify-center h-screen bg-gray-100 space-y-4">
+      <h1 className="text-xl font-bold">Play Different Audios</h1>
 
-      {currentScreen === "fakeCall" && (
-        <FakeCallScreen setCurrentScreen={setCurrentScreen} />
-      )}
+      <audio ref={audioRef1} src="/cab.mp3" />
+      <audio ref={audioRef2} src="/street_Ai.mp3" />
+      <audio ref={audioRef3} src="/party.mp3" />
+
+      <button
+        onClick={() => playAudio(audioRef1)}
+        className="px-4 py-2 bg-blue-500 text-white rounded-lg shadow-md hover:bg-blue-600"
+      >
+        ▶ Play Audio 1
+      </button>
+
+      <button
+        onClick={() => playAudio(audioRef2)}
+        className="px-4 py-2 bg-green-500 text-white rounded-lg shadow-md hover:bg-green-600"
+      >
+        ▶ Play Audio 2
+      </button>
+
+      <button
+        onClick={() => playAudio(audioRef3)}
+        className="px-4 py-2 bg-purple-500 text-white rounded-lg shadow-md hover:bg-purple-600"
+      >
+        ▶ Play Audio 3
+      </button>
     </div>
   );
 }
+
 
 
   const SelfDefenseScreen = () => (
