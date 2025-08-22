@@ -163,7 +163,7 @@ function App() {
           <div className="bg-white rounded-2xl shadow-lg p-4">
             <button
            onClick={() => {
-    const audio = new Audio("/safe-in-a-cab.mp3"); 
+    const audio = new Audio("/https://drive.google.com/file/d/13huYz0hWI573xM7YU2G0szNy2F1VOgi5/view?usp=sharing"); 
     audio.play();
   }}
               className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-6 px-6 rounded-xl transition-all duration-200">
@@ -178,7 +178,7 @@ function App() {
           <div className="bg-white rounded-2xl shadow-lg p-4">
             <button
                 onClick={() => {
-    const audio = new Audio("/empty lane.mp3"); 
+    const audio = new Audio("/https://drive.google.com/file/d/1HsmODCTyMQd61-uiQndlmXaF6fqTfV2m/view?usp=sharing"); 
     audio.play();
   }}
               className="w-full bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold py-6 px-6 rounded-xl transition-all duration-200">
@@ -193,7 +193,7 @@ function App() {
           <div className="bg-white rounded-2xl shadow-lg p-4">
             <button
                 onClick={() => {
-    const audio = new Audio("/escape-a-public-place.mp3"); 
+    const audio = new Audio("/https://drive.google.com/file/d/12mW9CLjm_ul8jsfA4Pr9aMgkrS4gzvyB/view?usp=sharing"); 
     audio.play();
   }}
               className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-6 px-6 rounded-xl transition-all duration-200">
