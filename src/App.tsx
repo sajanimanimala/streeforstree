@@ -11,6 +11,8 @@ import {
   Users,
   Building2
 } from 'lucide-react';
+import { useState } from "react";
+import FakeCallScreen from "./FakeCallScreen"; // 👈 import it
 
 function App() {
   const [currentScreen, setCurrentScreen] = useState('main');
@@ -145,8 +147,6 @@ function App() {
     </div>
   );
 
-  import { useState } from "react";
-import FakeCallScreen from "./FakeCallScreen"; // 👈 import it
 
 function App() {
   const [currentScreen, setCurrentScreen] = useState("main");
