@@ -82,3 +82,5 @@ This project is proprietary and protected.
 All rights are reserved by the contributors. Please refer to the LICENSE
 and NOTICE files for details.
 For collaboration or licensing inquiries, feel free to reach out at sajanimanimala5@gmail.com
+
+✨ Built with passion and purpose during Hack Wars 2.0!
