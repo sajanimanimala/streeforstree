@@ -1,0 +1,20 @@
+NOTICE
+
+This repository contains proprietary code and intellectual property of the 
+"Stree For Stree" project team: 
+- Sajani M
+- Khushi Ozha
+- Madiha Javeed
+- Ahasanth Taqdees
+
+The contents of this repository are made available for viewing and educational 
+purposes only. 
+
+Reproduction, modification, distribution, or use of this software in whole or in 
+part is strictly prohibited without prior written permission from the authors.
+
+The project contributors reserve the right to pursue patent protection for 
+concepts and features presented in this work. 
+
+For licensing or collaboration inquiries, please contact:
+[Your Email Here]
