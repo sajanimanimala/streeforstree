@@ -26,10 +26,10 @@ function App() {
           
           // In a real app, this would integrate with SMS API
           // For demo purposes, we'll show an alert
-          alert(`SOS Alert sent!\nMessage: ${message}\nTo: 9177831249`);
+          alert(`SOS Alert sent!\nMessage: ${message}\nTo: 1234567890`);
           
           // Alternative: Open SMS app (works on mobile)
-          const smsUrl = `sms:9177831249?body=${encodeURIComponent(message)}`;
+          const smsUrl = `sms:1234567890?body=${encodeURIComponent(message)}`;
           window.open(smsUrl);
         },
         (error) => {
