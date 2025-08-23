@@ -83,18 +83,18 @@ function App() {
           const { latitude, longitude } = position.coords;
           const location = `https://maps.google.com/?q=${latitude},${longitude}`;
           const message = `EMERGENCY! I need help. My current location is: ${location}`;
-          const smsLink = `sms:9177831249?body=${encodeURIComponent(message)}`;
+          const smsLink = `sms:01234567890?body=${encodeURIComponent(message)}`;
           window.open(smsLink);
         },
         () => {
           const message = "EMERGENCY! I need help. Unable to get location.";
-          const smsLink = `sms:9177831249?body=${encodeURIComponent(message)}`;
+          const smsLink = `sms:01234567890?body=${encodeURIComponent(message)}`;
           window.open(smsLink);
         }
       );
     } else {
       const message = "EMERGENCY! I need help. Location not available.";
-      const smsLink = `sms:9177831249?body=${encodeURIComponent(message)}`;
+      const smsLink = `sms:01234567890?body=${encodeURIComponent(message)}`;
       window.open(smsLink);
     }
   };
