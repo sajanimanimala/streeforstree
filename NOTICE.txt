@@ -1,7 +1,7 @@
 NOTICE
 
 This repository contains proprietary code and intellectual property of the 
-"Stree For Stree" project team: 
+"streeforstree" project team: 
 - Sajani M
 - Khushi Ozha
 - Madiha Javeed
